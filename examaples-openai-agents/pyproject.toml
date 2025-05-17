@@ -1,0 +1,32 @@
+[project]
+name = "exmaples-openai-agents"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Muhammad Fahad Khan", email = "fghory@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "agentops>=0.4.6",
+    "openai-agents[viz]>=0.0.9",
+    "tavily-python>=0.7.1",
+]
+
+[project.scripts]
+exmaples-openai-agents = "exmaples_openai_agents:main"
+agent-as-tool = "exmaples_openai_agents.agent_as_tool:main"
+deterministic = "exmaples_openai_agents.deterministic:main"
+llm_as_judge = "exmaples_openai_agents.llm_as_judge:main"
+parallelization = "exmaples_openai_agents.parallelization:main"
+routing = "exmaples_openai_agents.routing:main"
+dynamic-prompt = "exmaples_openai_agents.dynamic_system_prompt:main"
+customer-service = "exmaples_openai_agents.customer_service:main"
+handoff-filter = "exmaples_openai_agents.handoff_message_filter:main"
+panaversity = "exmaples_openai_agents.panaversity:main"
+filesearch = "exmaples_openai_agents.filesearchtool:main"
+websearch = "exmaples_openai_agents.websearchtool:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

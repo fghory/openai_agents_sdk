@@ -1,0 +1,21 @@
+[project]
+name = "research-assistant"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Muhammad Fahad Khan", email = "fghory@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "agentops>=0.4.11",
+    "openai-agents>=0.0.14",
+    "pydantic>=2.11.4",
+]
+
+[project.scripts]
+research-assistant = "research_assistant.main:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

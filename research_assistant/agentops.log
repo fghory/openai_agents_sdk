@@ -1,0 +1,3 @@
+2025-05-15 16:52:10,913 - INFO - Session Replay: https://app.agentops.ai/sessions?trace_id=e778cbcd024c7c99c0f1a6784489419f
+2025-05-15 16:53:06,268 - INFO - Session Replay: https://app.agentops.ai/sessions?trace_id=e778cbcd024c7c99c0f1a6784489419f
+2025-05-15 16:53:07,519 - ERROR - [agentops.InternalSpanProcessor] Error uploading logfile: [WinError 32] The process cannot access the file because it is being used by another process: 'H:\\CldNtvAppGenAIEngr\\Back-End\\Revision_Aug24\\GenAIRev\\uv\\openai_agents_sdk\\research_assistant\\agentops-tmp.log'

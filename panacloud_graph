@@ -1,0 +1,13 @@
+
+    digraph G {
+        graph [splines=true];
+        node [fontname="Arial"];
+        edge [penwidth=1.5];
+    "__start__" [label="__start__", shape=ellipse, style=filled, fillcolor=lightblue, width=0.5, height=0.3];"__end__" [label="__end__", shape=ellipse, style=filled, fillcolor=lightblue, width=0.5, height=0.3];"Panacloud Agent" [label="Panacloud Agent", shape=box, style=filled, fillcolor=lightyellow, width=1.5, height=0.8];"Web Development Agent" [label="Web Development Agent", shape=box, style=filled, style=rounded, fillcolor=lightyellow, width=1.5, height=0.8];"__start__" [label="__start__", shape=ellipse, style=filled, fillcolor=lightblue, width=0.5, height=0.3];"__end__" [label="__end__", shape=ellipse, style=filled, fillcolor=lightblue, width=0.5, height=0.3];"Web Development Agent" [label="Web Development Agent", shape=box, style=filled, fillcolor=lightyellow, width=1.5, height=0.8];"Mobile Development Agent" [label="Mobile Development Agent", shape=box, style=filled, style=rounded, fillcolor=lightyellow, width=1.5, height=0.8];"__start__" [label="__start__", shape=ellipse, style=filled, fillcolor=lightblue, width=0.5, height=0.3];"__end__" [label="__end__", shape=ellipse, style=filled, fillcolor=lightblue, width=0.5, height=0.3];"Mobile Development Agent" [label="Mobile Development Agent", shape=box, style=filled, fillcolor=lightyellow, width=1.5, height=0.8];"Agentic AI Agent" [label="Agentic AI Agent", shape=box, style=filled, style=rounded, fillcolor=lightyellow, width=1.5, height=0.8];"__start__" [label="__start__", shape=ellipse, style=filled, fillcolor=lightblue, width=0.5, height=0.3];"__end__" [label="__end__", shape=ellipse, style=filled, fillcolor=lightblue, width=0.5, height=0.3];"Agentic AI Agent" [label="Agentic AI Agent", shape=box, style=filled, fillcolor=lightyellow, width=1.5, height=0.8];"transfer_to_devops" [label="transfer_to_devops", shape=ellipse, style=filled, fillcolor=lightgreen, width=0.5, height=0.3];"transfer_to_openai" [label="transfer_to_openai", shape=ellipse, style=filled, fillcolor=lightgreen, width=0.5, height=0.3];"__start__" -> "Panacloud Agent";
+            "Panacloud Agent" -> "Web Development Agent";"Web Development Agent" -> "__end__";
+            "Panacloud Agent" -> "Mobile Development Agent";"Mobile Development Agent" -> "__end__";
+            "Panacloud Agent" -> "Agentic AI Agent";
+        "Agentic AI Agent" -> "transfer_to_devops" [style=dotted, penwidth=1.5];
+        "transfer_to_devops" -> "Agentic AI Agent" [style=dotted, penwidth=1.5];
+        "Agentic AI Agent" -> "transfer_to_openai" [style=dotted, penwidth=1.5];
+        "transfer_to_openai" -> "Agentic AI Agent" [style=dotted, penwidth=1.5];"Agentic AI Agent" -> "__end__";}

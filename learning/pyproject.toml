@@ -1,0 +1,27 @@
+[project]
+name = "learning"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Muhammad Fahad Khan", email = "fghory@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "asyncio>=3.4.3",
+    "langchain>=0.3.23",
+    "langchain-openai>=0.3.12",
+    "langchain-tavily>=0.1.5",
+    "openai-agents>=0.0.9",
+    "tavily-python>=0.5.4",
+]
+
+[project.scripts]
+learning = "learning:main"
+streaming = "learning.streaming:main"
+openai_search = "learning.openai_tools:main"
+gemni_search = "learning.gemini_langchain_tools:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

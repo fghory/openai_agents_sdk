@@ -1,0 +1,22 @@
+[project]
+name = "voice-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Muhammad Fahad Khan", email = "fghory@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "openai-agents[voice]>=0.0.15",
+    "sounddevice>=0.5.1",
+    "textual>=3.2.0",
+]
+
+[project.scripts]
+voice-agent = "voice_agent.recorded:main"
+streaming = "voice_agent.streaming_audio:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
