@@ -29,6 +29,8 @@ def random_number_tool(max:int)->int:
     return random.randint(0, max)
 
 def spanish_handoff_message_filter(handoff_message_data:HandoffInputData)->HandoffInputData:
+    print(f"pre_handoff_items: {handoff_message_data.pre_handoff_items}")
+    print(f"new_items: {handoff_message_data.new_items}")
     handoff_message_data = handoff_filters.remove_all_tools(handoff_message_data)
 
     # Second, we'll also remove the first two items from the history, just for demonstration
